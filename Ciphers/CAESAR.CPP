@@ -101,7 +101,7 @@ string Caesar::decrypt(string message)
                 letterPos = j - _key;
                 if(letterPos < 0)
                 {
-                    //start the letter shift from 0th position again
+                    //start the letter shift from 25th position again
                     letterPos = NUM_LETTERS + letterPos;
                 }
                 _decryptM[i] = _ALPHA_CAP[letterPos]; //add it to the encrypt message
